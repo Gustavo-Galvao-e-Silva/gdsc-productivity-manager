@@ -1,0 +1,8 @@
+.container {
+    height: 100vh;
+    background: linear-gradient(135deg, #E8F0FE, #F5F5F5);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
