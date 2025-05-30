@@ -20,7 +20,7 @@ This project uses `npm` and includes a `package-lock.json` file to ensure consis
 1. **Clone the repository:**
 
    ```bash
-   git clone <ttps://github.com/Gustavo-Galvao-e-Silva/gdsc-productivity-manager.git
+   git clone https://github.com/Gustavo-Galvao-e-Silva/gdsc-productivity-manager.git
 
 2. **Install dependencies:**
    ```bash
@@ -40,3 +40,5 @@ To run the project locally or deploy your own instance, follow these steps:
   Visit Clerk.dev and create a new project.
   Copy your Clerk frontend and backend API keys.
   Add them to your .env.local file as well.
+
+### ✅ You’re all set!
