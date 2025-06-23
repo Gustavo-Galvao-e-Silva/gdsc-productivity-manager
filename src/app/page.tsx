@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { CircularProgress } from '@mui/material';
 
-//TODO: make things not look shit with MUI or ShadCN lol
+//TODO: make things not look shit with MUI or ShadCN
 export default function Home() {
     const { isSignedIn, isLoaded } = useAuth();
     const router = useRouter();
