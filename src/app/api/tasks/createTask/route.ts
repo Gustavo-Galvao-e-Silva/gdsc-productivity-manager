@@ -2,6 +2,7 @@ import { adminDb } from '@/firebase/firebaseadmin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { NextRequest, NextResponse } from 'next/server';
 
+//TODO: clean out these interfaces and work on data validation
 interface Task {
     taskId: string;
     teamId: string;
@@ -71,12 +72,14 @@ function validateAndCleanInput(body: TaskCreationBody): SanitizedInput {
     if (!body.teamId.trim()) {
         throw new Error('teamId is required and must be a non-empty string');
     }
+
     const teamId = cleanId(body.teamId);
 
     // Task name validation
-    if (!body.name.trim()) {
+    if (!body.name.trim() || body.name.trim()) {
         throw new Error('Task name is required and must be a non-empty string');
     }
+
     const name = cleanString(body.name, 100);
 
     // Description validation (optional but if provided, must be string)

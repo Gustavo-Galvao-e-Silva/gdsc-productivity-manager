@@ -98,7 +98,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
         // Insert user into Firestore
         const userDoc = {
-            clerkId: user.id,
             email: validation.email,
             firstName: user.first_name!,
             lastName: user.last_name!,
